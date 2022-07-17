@@ -1,4 +1,4 @@
-# Implementation of Dynamic label smoothing and semantic transport for unsupervised domain adaptation
+# Implementation of DLST
 
 ## Datasets
 - [Office-31](https://people.eecs.berkeley.edu/~jhoffman/domainadapt/)
