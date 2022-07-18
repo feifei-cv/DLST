@@ -110,7 +110,7 @@ def opts():
                              "When phase is 'analysis', only analysis the model.")
     args = parser.parse_args()
 
-    args.root =  '/disks/disk0/feifei/paper/paper3-3090/' + args.root ###
+    args.root =  '/disks/disk0/feifei/paper/paper3-3090/' + args.root ### Edit
 
     return args
 
@@ -182,7 +182,7 @@ def main():
     num_classes = train_source_dataset.num_classes
     ###### chose baseline: dann or cdan
     if args.base == 'dann':
-        domain_discri = DomainDiscriminator(in_feature=classifier_feature_dim, hidden_size=1024).to(device) # 定义域判别器
+        domain_discri = DomainDiscriminator(in_feature=classifier_feature_dim, hidden_size=1024).to(device)
         domain_adv = DomainAdversarialLoss(domain_discri).to(device)
     else: #CDAN
         if args.randomized:
